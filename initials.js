@@ -8,5 +8,7 @@ function getInitials (name) {
 }
 
 console.log(
-    getInitials("Paul derbin Christensen")
+    getInitials("Paul Derbin Christensen"),
+    getInitials("Faith Annemarie Christensen"),
+    getInitials("Dallin Porter Christensen")
 );
