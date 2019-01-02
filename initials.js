@@ -1,16 +1,12 @@
 function firstLetter(name) {
-    return name[0];
+    return name[0].toUpperCase();
 }
 
-function getInitials (firstName, middleName, lastName) {
-
-    var firstInit = firstLetter(firstName);
-    var middleInit = firstLetter(middleName);
-    var lastInit = firstLetter(lastName);
-
-    return firstInit + "." + middleInit + "." + lastInit + ".";
+function getInitials (name) {
+    var namesArr = name.split(' ')
+    return firstLetter(namesArr[0]) + "." + firstLetter(namesArr[1]) + "." + firstLetter(namesArr[2]) + "."
 }
 
 console.log(
-    getInitials("Faith","Annmarie","Christensen")
+    getInitials("Paul derbin Christensen")
 );
