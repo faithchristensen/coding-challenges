@@ -13,7 +13,15 @@ function okDivide(item5, item6) {
 function okMultiply(item7, item8) {
     return item7 * item8;
 }
+
+function okSquared(item9) {
+    return item9 * item9; 
+}
   
 console.log(
     okDivide( okMultiply( okAdd(1,2), okSubtract(4, 2)), 6)
+)
+
+console.log(
+    okSquared(3)
 )
