@@ -17,6 +17,14 @@ function okMultiply(item7, item8) {
 function okSquared(item9) {
     return item9 * item9; 
 }
+
+function evenOrOdd(item10) {
+    if (item10 %2 === 0) {
+        return "Even"; 
+    } else {
+        return "odd";
+    }
+}
   
 console.log(
     okDivide( okMultiply( okAdd(1,2), okSubtract(4, 2)), 6)
@@ -24,4 +32,8 @@ console.log(
 
 console.log(
     okSquared(3)
+)
+
+console.log(
+    evenOrOdd(11)
 )
