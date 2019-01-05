@@ -25,6 +25,11 @@ function evenOrOdd(item10) {
         return "odd";
     }
 }
+
+function digitLength(num) {
+    var digString = num.toString();
+    return digString.length;
+}
   
 console.log(
     okDivide( okMultiply( okAdd(1,2), okSubtract(4, 2)), 6)
@@ -37,3 +42,7 @@ console.log(
 console.log(
     evenOrOdd(11)
 )
+
+console.log(
+    digitLength(111)
+);
