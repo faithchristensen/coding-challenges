@@ -31,16 +31,19 @@ var animals = [
     }
 ]
 
+
 function animalProcess(arr, prop) {
     var animalTrait = [];
     for (var i = 0; i < arr.length; i++) {
         var trait = arr[i][prop];
-        animalTrait.push(trait);
+        if (arr[i].hasOwnProperty(prop)) {
+            animalTrait.push(trait);
+        } else {
+            return "Property does not exist"
+        }
     }
     return animalTrait;
 }
-
-
 
 console.log(
     addAll([ 1, 3, 12 ])
