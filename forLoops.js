@@ -45,8 +45,23 @@ function animalProcess(arr, prop) {
     return animalTrait;
 }
 
+
+function lowestValue(arr) {
+    var currentLow = arr[0];
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] < currentLow) {
+            currentLow = arr[i];
+        }
+    }
+    return currentLow;
+}
+
+
 console.log(
     addAll([ 1, 3, 12 ])
 )
 
 console.log(animalProcess(animals, 'sound'));
+
+
+console.log(lowestValue([1, 7, 19, -2, 10, 17, -7]));
