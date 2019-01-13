@@ -57,11 +57,29 @@ function lowestValue(arr) {
 }
 
 
-console.log(
-    addAll([ 1, 3, 12 ])
-)
+var nested = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+]
+
+function unNest(arr) {
+    var newArr = [];
+    for (var i = 0; i < arr.length; i++) {
+        var arri = arr[i];
+        newArr = newArr.concat(arri);
+    }
+
+    return newArr;
+}
+
+
+console.log(addAll([ 1, 3, 12 ]))
 
 console.log(animalProcess(animals, 'sound'));
 
 
 console.log(lowestValue([1, 7, 19, -2, 10, 17, -7]));
+
+
+console.log(unNest(nested));
