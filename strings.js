@@ -1,44 +1,41 @@
-function stringAdd(str1, str2) {
-    return str1 + str2;
-}
+var strings = {
+    stringAdd: function(str, str1) {
+        return str + str1;
+    },
+    firstLetter: function(str) {
+        return str[0];
+    },
+    stringLength: function(str) {
+        return str.length;
+    },
+    lastLetter(str) {
+        return str[this.stringLength(str) -1];
+    },
+    stringArray: function(str) {
+        return str.split(" ");
+    },
+    firstWord: function(str) {
+        return this.stringArray(str)[0];
+    },
+    lastWord: function(str) {
+        var arr = this.stringArray(str);
+        var length = arr.length;
+        return arr[length -1];
+    }
+};
 
-function firstLetter(stri) {
-    return stri[0];
-}
+module.exports = strings
 
-function stringLength(str) {
-    return str.length;
-}
+// console.log(stringsObj.stringAdd("Hello", " Dallin!"))
 
-function lastLetter(str) {
-    return str[stringLength(str) -1];
-}
+// console.log(stringsObj.firstLetter("Apple"))
 
-function stringArray(str) {
-    return str.split(" ");
-}
+// console.log(stringsObj.stringLength("Cake"))
 
-function firstWord(str) {
-    return stringArray(str)[0];
-}
+// console.log(stringsObj.lastLetter("Universe"))
 
-function lastWord(str) {
-    var arr = stringArray(str);
-    var length = arr.length;
-    return arr[length -1];
-}
+// console.log(stringsObj.stringArray("How was class"))
 
+// console.log(stringsObj.firstWord("Hello Dallin Porter"))
 
-console.log(stringAdd("Hello", " Dallin!"))
-
-console.log(firstLetter("Apple"))
-
-console.log(stringLength("Cake"))
-
-console.log(lastLetter("Universe"))
-
-console.log(stringArray("How was class"))
-
-console.log(firstWord("Hello Dallin Porter"))
-
-console.log(lastWord("How are you"))
+// console.log(stringsObj.lastWord("How are you"))

@@ -1,10 +1,8 @@
-function firstLetter(name) {
-    return name[0].toUpperCase();
-}
+var strings = require('./strings.js');
 
 function getInitials (name) {
     var namesArr = name.split(' ')
-    return firstLetter(namesArr[0]) + "." + firstLetter(namesArr[1]) + "." + firstLetter(namesArr[2]) + "."
+    return strings.firstLetter(namesArr[0]) + "." + strings.firstLetter(namesArr[1]) + "." + strings.firstLetter(namesArr[2]) + "."
 }
 
 console.log(
