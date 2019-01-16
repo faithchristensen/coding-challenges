@@ -1,38 +1,37 @@
-function buildArr(item1, item2, item3) {
-    var array = [item1, item2, item3];
-    return array;
+var array = {
+    buildArr: function(item1, item2, item3) {
+        var array = [item1, item2, item3];
+        return array;
+    },
+    pushToArray: function(arr, val) {
+        arr.push(val);
+        return arr;
+    },
+    popToArray: function(arr) {
+        arr.pop();
+        return arr;
+    },
+    buildSent: function(arr) {
+        return arr.join(" ");
+    },
+    combArr: function(arr1, arr2) {
+        return arr1.concat(arr2);
+    },
+    arrSort: function(arr) {
+        return arr.sort();
+    }
 }
 
-function pushToArray(arr, val) {
-    arr.push(val);
-    return arr;
-}
+module.exports = array;
 
-function popToArray(arr) {
-    arr.pop();
-    return arr;
-}
+console.log(array.buildArr("Dallin", "Paul", "Faith"));
 
-function buildSent(arr) {
-    return arr.join(" ");
-}
+console.log(array.pushToArray(["cake", "penguin"], 11));
 
-function combArr(arr1, arr2) {
-    return arr1.concat(arr2);
-}
+console.log(array.popToArray([1, 2, 3]));
 
-function arrSort(arr) {
-    return arr.sort();
-}
+console.log(array.buildSent(["Hello", "how", "are", "you"]));
 
-console.log(buildArr("Dallin", "Paul", "Faith"));
+console.log(array.combArr([1, 2], [4, 5]));
 
-console.log(pushToArray(["cake", "penguin"], 11));
-
-console.log(popToArray([1, 2, 3]));
-
-console.log(buildSent(["Hello", "how", "are", "you"]));
-
-console.log(combArr([1, 2], [4, 5]));
-
-console.log(arrSort(["Bravo", "Charlie", "Alpha"]));
+console.log(array.arrSort(["Bravo", "Charlie", "Alpha"]));

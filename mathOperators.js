@@ -1,48 +1,30 @@
-function okAdd(item1, item2) {
-    return item1 + item2;
-}
-  
-function okSubtract(item3, item4) {
-    return item3 - item4;
-}
-
-function okDivide(item5, item6) {
-    return item5 / item6;
-}
-
-function okMultiply(item7, item8) {
-    return item7 * item8;
-}
-
-function okSquared(item9) {
-    return item9 * item9; 
-}
-
-function evenOrOdd(item10) {
-    if (item10 %2 === 0) {
-        return "Even"; 
-    } else {
-        return "odd";
+var math = {
+    okAdd: function(item1, item2) {
+        return item1 + item2;
+    },
+    okSubtract: function(item3, item4) {
+        return item3 - item4;
+    },
+    okDivide: function(item5, item6) {
+        return item5 / item6;
+    },
+    okMultiply: function(item7, item8) {
+        return item7 * item8;
+    },
+    okSquared: function(item9) {
+        return item9 * item9;
+    },
+    evenOrOdd: function(item10) {
+        if (item10 %2 === 0) {
+            return "even"; 
+        } else {
+            return "odd";
+        }
+    },
+    digitLength: function(num) {
+        var digString = num.toString();
+        return digString.length;
     }
 }
 
-function digitLength(num) {
-    var digString = num.toString();
-    return digString.length;
-}
-  
-console.log(
-    okDivide( okMultiply( okAdd(1,2), okSubtract(4, 2)), 6)
-)
-
-console.log(
-    okSquared(3)
-)
-
-console.log(
-    evenOrOdd(11)
-)
-
-console.log(
-    digitLength(111)
-);
+module.exports = math;
