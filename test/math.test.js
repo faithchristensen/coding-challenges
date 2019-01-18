@@ -1,5 +1,5 @@
-var test = require('./test.js');
-var math = require('./mathOperators.js');
+var test = require('../lib/test.js');
+var math = require('../lib/mathOperators.js');
 
 test("testing squared function", math.okSquared(3), 9);
 
