@@ -1,0 +1,11 @@
+{
+  "name": "coding-challenges",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/faithchristensen/coding-challenges.git",
+  "author": "<faithchristensen111@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "node test/index.test.js"
+  }
+}

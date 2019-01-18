@@ -1,4 +1,4 @@
-var strings = require('./strings.js');
+var strings = require('../lib/strings.js');
 
 function getInitials (name) {
     var namesArr = name.split(' ')
