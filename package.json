@@ -2,10 +2,25 @@
   "name": "coding-challenges",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/faithchristensen/coding-challenges.git",
-  "author": "<faithchristensen111@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faithchristensen/coding-challenges.git"
+  },
+  "author": " <faithchristensen111@gmail.com>",
   "license": "MIT",
   "scripts": {
     "test": "node test/index.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/faithchristensen/coding-challenges/issues"
+  },
+  "homepage": "https://github.com/faithchristensen/coding-challenges#readme",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "description": "",
+  "dependencies": {
+    "array-equal": "^1.0.0"
   }
 }

@@ -8,6 +8,7 @@ function arrayTest() {
     test("testing joining array", array.buildSent(['first', 'second', 'third']), 'first second third');
     test("testing concat array", array.combArr(['first', 'second'], ['third', 'fourth']), ['first', 'second', 'third', 'fourth']);
     test("testing sort array", array.arrSort(['b', 'a']), ['a', 'b']);
+    test("testing comparison function", array.compareArrays([1,2], [1,2]), true);
 }
 
 module.exports = arrayTest;
