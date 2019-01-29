@@ -12,3 +12,5 @@ function arrayTest() {
 }
 
 module.exports = arrayTest;
+
+console.log('zsh test')
