@@ -40,4 +40,4 @@ function profileLookUp(name, prop) {
 }
 
 
-console.log(profileLookUp("Kristian", "poop"));
+console.log(profileLookUp("Kristian", "Hm"));
